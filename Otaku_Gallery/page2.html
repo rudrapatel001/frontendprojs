@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallpaper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Otaku<span>Gallery</span></h3>
+        </div>
+        <div class="menu-button" onclick="openNav()">&#9776;</div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="page2.html">Page 2</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        </div>
+        <div class="box">
+
+            <div class="dream">
+                <img src="img/16.jpg" onclick="openModal(this.src)">
+                <a href="img/16.jpg" download="Kyōjurō Rengoku.jpg"class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/17.jpg" onclick="openModal(this.src)">
+                <a href="img/17.jpg" download="Sasuke Uchiha.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/18.jpg" onclick="openModal(this.src)">
+                <a href="img/18.jpg" download="Goku.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/19.jpg" onclick="openModal(this.src)">
+                <a href="img/19.jpg" download="Your Name.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/20.jpg" onclick="openModal(this.src)">
+                <a href="img/20.jpg" download="Ichigo Kurosaki.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div> 
+
+            <div class="dream">
+                <img src="img/21.jpg" onclick="openModal(this.src)">
+                <a href="img/21.jpg" download="Donquixote Doflamingo.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/22.jpg" onclick="openModal(this.src)">
+                <a href="img/22.jpg" download="Kokushibo.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/23.jpg" onclick="openModal(this.src)">
+                <a href="img/23.jpg" download="Naruto Uzumaki.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/24.jpg" onclick="openModal(this.src)">
+                <a href="img/24.jpg"download="Zenitsu Agatsuma.jpg"class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/25.jpg" onclick="openModal(this.src)">
+                <a href="img/25.jpg" download="Sanji.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+
+            <div class="dream">
+                <img src="img/26.jpg" onclick="openModal(this.src)">
+                <a href="img/26.jpg" download="Guts.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/27.jpg" onclick="openModal(this.src)">
+                <a href="img/27.jpg" download="Gojo Satoru.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/28.jpg" onclick="openModal(this.src)">
+                <a href="img/28.jpg" download="Isagi Yoichi.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/29.jpg" onclick="openModal(this.src)">
+                <a href="img/29.jpg" download="Giyu Tomioka.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/30.jpg" onclick="openModal(this.src)">
+                <a href="img/30.jpg" download="Levi Ackerman.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>  
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="btn-container">
+                <a href="index.html">prev</a>
+                <a href="index.html">Home</a>
+                <a href="page3.html">Next</a>
+        </div>
+        <div onclick="scrollToTop()" class="scrollTop"><i class="fa-regular fa-up"></i></div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section social">
+                    <h3>Follow Me Here <i class="fa-solid fa-arrow-down-left"></i></h3>
+                    <a href="https://www.linkedin.com/in/rudra-patel-515441242/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rudrapatel001" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rudra_patel_.07/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href=" https://wa.me/9316334332" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rudra Patel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+     <!-- Modal -->
+     <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

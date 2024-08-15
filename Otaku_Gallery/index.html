@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Gallery | Rudra Patel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Otaku<span>Gallery</span></h3>
+            <h4>いらっしゃいませ!!!</h4>
+            
+        </div>
+        <div class="menu-button" onclick="openNav()">&#9776;</div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="page2.html">Page 2</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        </div>
+        <div class="box">
+
+            <div class="dream">
+                <img src="img\1-opt.jpg" onclick="openModal(this.src)">
+                <a href="img\1.jpg" download="Kenpachi Zaraki.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/2.jpg" onclick="openModal(this.src)">
+                <a href="img/2.jpg" download="Monkey D Luffy.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/3.jpg" onclick="openModal(this.src)">
+                <a href="img/3.jpg" download="Rukia Kuchiki.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/4.jpg" onclick="openModal(this.src)">
+                <a href="img/4.jpg" download="Goku.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/5.jpg" onclick="openModal(this.src)">
+                <a href="img/5.jpg" download="Seishiro Nagi.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div> 
+
+            <div class="dream">
+                <img src="img/6.jpg" onclick="openModal(this.src)">
+                <a href="img/6.jpg" download="Levi Ackerman.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/7.jpg" onclick="openModal(this.src)">
+                <a href="img/7.jpg" download="Sanji.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/8.jpg" onclick="openModal(this.src)">
+                <a href="img/8.jpg" download="Portgas D Ace.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/9.jpg" onclick="openModal(this.src)">
+                <a href="img/9.jpg" download="Shoei Baro.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/10.jpg" onclick="openModal(this.src)">
+                <a href="img/10.jpg" download="Tanjiro Kamado.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+
+            <div class="dream">
+                <img src="img/11.jpg" onclick="openModal(this.src)">
+                <a href="img/11.jpg" download="Shinobu Kochō.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/12.jpg" onclick="openModal(this.src)">
+                <a href="img/12.jpg" download="Zoro.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/13.jpg" onclick="openModal(this.src)">
+                <a href="img/13.jpg" download="Kyōjurō Rengoku.jpg"class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/14.jpg" onclick="openModal(this.src)">
+                <a href="img/14.jpg" download="Portgas D Ace.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+                <img src="img/15.jpg" onclick="openModal(this.src)">
+                <a href="img/15.jpg" download="Your Name.jpg" class="download-btn"><i class="fa-solid fa-download"></i></a>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+        <div class="nxt-btn">
+            <a href="page2.html">Next</a>
+        </div>
+        <div onclick="scrollToTop()" class="scrollTop"><i class="fa-regular fa-up"></i></div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section social">
+                    <h3>Follow Me Here <i class="fa-solid fa-arrow-down-left"></i></h3>
+                    <a href="https://www.linkedin.com/in/rudra-patel-515441242/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rudrapatel001" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rudra_patel_.07/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href=" https://wa.me/9316334332" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rudra Patel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
